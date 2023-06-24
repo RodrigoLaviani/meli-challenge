@@ -1,0 +1,41 @@
+.item-container {
+    width: 96%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+    padding: 16px 16px 16px 16px;
+}
+  
+.item-data {
+    display: grid;
+    width: 70%;
+    height: 70%;
+    align-self: baseline;
+}
+
+.item-price {
+    align-self: center;
+    font-size: 24px;
+    padding-top: 24px;
+}
+  
+.item-description {
+    width: 50%;
+    font-size: 18px;
+}
+
+.item-location {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10%;
+    padding-right: 4%;
+}
