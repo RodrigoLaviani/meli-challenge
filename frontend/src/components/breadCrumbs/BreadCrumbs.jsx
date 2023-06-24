@@ -1,8 +1,8 @@
-import './BreadCrumbs.scss';
+import './Breadcrumbs.scss';
 import chevron from '../../shared/assets/chevron.svg';
 
-const BreadCrumbs = ({ history }) => {
-    const showBreadCrumbs = () => {
+const Breadcrumbs = ({ history }) => {
+    const showBreadcrumbs = () => {
         const historyMock = ['Electrónica, audio y video', 'iPod', 'Reproducciones', 'iPod touch', '32 GB'];
         const isLastOne = (index) => historyMock.length === index + 1
         return historyMock.map((bc, index) => (
@@ -17,11 +17,11 @@ const BreadCrumbs = ({ history }) => {
         <section className="breadcrumbs-container">
             <div className='breacrumbs'>
                 {
-                    showBreadCrumbs()
+                    showBreadcrumbs()
                 }
             </div>
         </section>
     )
 }
 
-export default BreadCrumbs;
+export default Breadcrumbs;

@@ -1,16 +1,18 @@
 import './App.scss';
 import Header from './components/header/Header';
-import BreadCrumbs from './components/breadCrumbs/BreadCrumbs';
+import Breadcrumbs from './components/breadcrumbs/Breadcrumbs';
 import SearchResult from './components/searchResult/SearchResult';
 import Container from './components/container/Container';
+import ItemDetail from './components/itemDetail/ItemDetail';
 
 const App = () => {
   return (
     <main className="App">
           <Header></Header>
-          <BreadCrumbs></BreadCrumbs>
+          <Breadcrumbs></Breadcrumbs>
           <Container>
-            <SearchResult></SearchResult>
+            {/* <SearchResult></SearchResult> */}
+            <ItemDetail></ItemDetail>
           </Container>
     </main>
   );

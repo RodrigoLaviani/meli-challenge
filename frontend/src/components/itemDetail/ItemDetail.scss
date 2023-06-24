@@ -1,0 +1,69 @@
+.detail-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.detail-section {
+    width: 70%;
+}
+
+.detail-image {
+    width: 680px;
+    height: 600px;
+    padding-left: 32px;
+    padding-top: 32px;
+    margin-bottom: 50px;
+}
+
+.detail-title {
+    font-size: 28px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+}
+
+.detail-description {
+    font-size: 16px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    color: #999;
+}
+
+.sell-section {
+    width: 30%;
+}
+
+.sell-box {
+    display: grid;
+    align-content: center;
+    height: 40%;
+}
+
+.sell-count {
+    font-size: 14px;
+}
+
+.sell-title {
+    font-weight: 600;
+    font-size: 24px;
+    width: 60%;
+    margin-top: 16px;
+}
+
+.sell-price {
+    font-size: 46px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.sell-button {
+    margin-right: 32px;
+    width: 300px;
+    background-color: #3483FA;
+    color: #FFF;
+    border-radius: 4px;
+    height: 48px;
+    border: none;
+    align-items: center;
+    font-size: 16px;
+}
