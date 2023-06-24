@@ -1,6 +1,6 @@
 import './Header.scss';
-import logo from './../../assets/Logo_ML.png';
-import searchIcon from './../../assets/ic_Search.png';
+import logo from './../../shared/assets/Logo_ML.png';
+import searchIcon from './../../shared/assets/ic_Search.png';
 import { useState } from 'react';
 
 const Header = ({ search }) => {
