@@ -13,7 +13,6 @@ export const searchItemByQuery = async (request: Request, response: Response): P
         const items = await getItemsByQuery(query);
         return response.status(200).json(items);
     } catch (error: any) {
-        console.log(error)
         return response.status(500).json(error);
     }
 }

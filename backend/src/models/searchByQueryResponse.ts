@@ -9,7 +9,7 @@ export interface ItemQuerySearch {
     id: string,
     title: string,
     price: {
-        currency: string, amount: number, decimales: number
+        currency: string, amount: number, decimals: number
     },
     picture: string,
     condition: string,
