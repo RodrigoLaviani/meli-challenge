@@ -1,9 +1,8 @@
+import { Author } from "./author"
+
 export interface SearchByIdResponse {
-    author: {
-        name: string
-        lastname: string
-    },
-    items: {
+    author: Author,
+    item: {
         id: string,
         title: string,
         price: {

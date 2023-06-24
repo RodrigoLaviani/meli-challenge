@@ -1,19 +1,17 @@
+import { Author } from "./author"
+
 export interface SearchByQueryResponse {
-    author: {
-        name: string
-        lastname: string
-    },
+    author: Author,
     categories: string[],
-    items: [
-        {
-            id: string,
-            title: string,
-            price: {
-                currency: string, amount: number, decimals: number
-            },
-            picture: string,
-            condition: string,
-            free_shipping: boolean
-        }
-    ]
+    items: ItemQuerySearch[]
+}
+export interface ItemQuerySearch {
+    id: string,
+    title: string,
+    price: {
+        currency: string, amount: number, decimales: number
+    },
+    picture: string,
+    condition: string,
+    free_shipping: boolean
 }
