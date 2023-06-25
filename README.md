@@ -80,6 +80,6 @@ Utilice react-router-dom para lo que es la navegación.
 
 De tener más tiempo para dedicarle a la aplicación, tendría en cuenta las siguientes mejoras:
 
-1. Cantidad de Unti Tests
+1. Cantidad de Unit Tests
 2. Implementación de Loader y Mensajes de Error
 3. Mejoras en la UX
