@@ -3,7 +3,7 @@
 ## Instalación
 
 Utilice las version 18 de node.
-Recomiendo instalar [nvm](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/) para poder usar el versión de NodeJs de los proyectos.
+Recomiendo instalar [nvm](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/) para poder usar el versionado de NodeJs de los proyectos.
 
 ## Ejecución
 
@@ -37,8 +37,7 @@ Se corren ejecutando el comando en cada proyecto:
 
 Para realizar la aplicación utilicé el stack de tecnologías pedido en la consigna.
 El Frontend está desarrollado con React, Sass para los estilos, react-helmet-async para el SEO.
-Utilice la libreria enzyme con jest para testear el comportamiento y el renderizado de los componentes/hooks.
-El Backend esta compuesto en capas para facilitar su testeo utilizando Express, use Jest para lo que es el backend 
+El Backend esta compuesto en capas para facilitar su testeo utilizando Express, use Jest para lo que es test 
 con la libreria supertest para mockear las request a los endpoints.
 
 
@@ -50,8 +49,7 @@ El Backend se encuentra dividido en tres capas:
 2. Handlers
 3. Servicios
 
-La responsabilidad del controller es dar una respuesta al pedido con un http status y un payload
-dependiendo de que viene en el handler.
+La responsabilidad del controller es dar una respuesta con un http status y un payload dependiendo que viene en el handler.
 Los handlers son los encargados de consumir los servicios y armar una respuesta para entregarle al controller.
 Los servicios tienen como tarea consumir los recursos externos, en este caso la api de Mercado Libre.
 
@@ -62,8 +60,8 @@ El Frontend consiste en el Header que contiene la barra de búsqueda y dos vista
 1. SearchResult
 2. ItemDetail
 
-La vista de Search muestra los resultados de la búsqueda.
-La vista de Detail muestra el detalle de un item.
+La vista de SearchResult muestra los resultados de la búsqueda.
+La vista de ItemDetail muestra el detalle de un item.
 
 Utilice react-router-dom para lo que es la navegación.
 
@@ -80,6 +78,6 @@ Utilice react-router-dom para lo que es la navegación.
 
 De tener más tiempo para dedicarle a la aplicación, tendría en cuenta las siguientes mejoras:
 
-1. Cantidad de Unit Tests
+1. Cantidad de Unit Tests en FE
 2. Implementación de Loader y Mensajes de Error
 3. Mejoras en la UX
