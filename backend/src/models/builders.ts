@@ -15,10 +15,10 @@ export const buildSearchByIdResponse = (item: any, description: any) : SearchByI
         price: {
           currency: item.currency_id,
           amount: parseInt(amount),
-          decimals: parseInt(decimals)
+          decimals: parseInt(decimals) || 0
         },
         picture: item.thumbnail,
-        condition: item.condition,
+        condition: item.condition === 'new' ? 'Nuevo' : 'Usado',
         free_shipping: item.shipping.free_shipping,
         sold_quantity: item.sold_quantity,
         description: description.plain_text
@@ -45,12 +45,12 @@ const getItems = (items: any) : ItemQuerySearch[] => {
             id: item.id,
             title: item.title,
             picture: item.thumbnail,
-            condition: item.condition === 'new' ? 'Nuevo' : 'Usado',
+            location: item.address.city_name,
             free_shipping: item.shipping.free_shipping,
             price: {
-                amount: item.price,
-                currency: parseInt(amount),
-                decimals: parseInt(decimals)
+                currency: item.currency_id,
+                amount: parseInt(amount),
+                decimals: parseInt(decimals) || 0
             }
         }
     });
