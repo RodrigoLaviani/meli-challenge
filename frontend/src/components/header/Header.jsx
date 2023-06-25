@@ -1,4 +1,5 @@
 import './Header.scss';
+import React from 'react';
 import logo from './../../shared/assets/Logo_ML.png';
 import searchIcon from './../../shared/assets/ic_Search.png';
 import { useState } from 'react';

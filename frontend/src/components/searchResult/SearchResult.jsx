@@ -1,4 +1,5 @@
 import './SearchResult.scss';
+import React from 'react';
 import { useNavigate } from "react-router-dom";
 import Item from '../item/Item';
 import formatPrice from '../../shared/helper/priceHelper';

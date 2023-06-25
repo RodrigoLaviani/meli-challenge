@@ -1,4 +1,5 @@
 import './App.scss';
+import React from 'react';
 import Header from './components/header/Header';
 import Breadcrumbs from './components/breadcrumbs/Breadcrumbs';
 import SearchResult from './components/searchResult/SearchResult';
@@ -19,7 +20,7 @@ const App = () => {
   const { search, items, categories } = useSearch();
   const location = useLocation()
 
-  return (  
+  return (
     <main className="App">
       <Header search={(e) => search(e)}></Header>
       {location.pathname !== '/' && <Breadcrumbs categories={categories}></Breadcrumbs>}

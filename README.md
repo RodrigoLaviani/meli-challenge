@@ -37,6 +37,7 @@ Se corren ejecutando el comando en cada proyecto:
 
 Para realizar la aplicación utilicé el stack de tecnologías pedido en la consigna.
 El Frontend está desarrollado con React, Sass para los estilos, react-helmet-async para el SEO.
+Utilice la libreria enzyme con jest para testear el comportamiento y el renderizado de los componentes/hooks.
 El Backend esta compuesto en capas para facilitar su testeo utilizando Express, use Jest para lo que es el backend 
 con la libreria supertest para mockear las request a los endpoints.
 
@@ -71,10 +72,9 @@ Utilice react-router-dom para lo que es la navegación.
 ## Generales
 
 1. Limité la cantidad de items (4) del lado del servidor a modo de reducir el tamaño de la respuesta.
-2. Utilizo enzyme (la libreria de Airbnb) para unit tests por una cuestion de familiaridad y conocimiento de la misma.
-3. La categoría del item no forma parte del contrato para el endpoint de detalle, por esto no se incluyó en esa vista.
-4. Se puede acceder a la vista de detalle de item con el ID del mismo por medio de la URL.
-5. No utilice branch como gitflow porque soy el único en el proyecto.
+2. La categoría del item no forma parte del contrato para el endpoint de detalle, por esto no se incluyó en esa vista.
+3. Se puede acceder a la vista de detalle de item con el ID del mismo por medio de la URL.
+4. No utilice branch como gitflow porque soy el único en el proyecto.
 
 ## Mejoras
 

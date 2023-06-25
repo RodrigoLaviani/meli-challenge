@@ -1,4 +1,5 @@
 import './Item.scss';
+import React from 'react';
 import shippingImg from './../../shared/assets/ic_shipping.png';
 
 const Item = ({ image, price, title, location, shipping }) => {

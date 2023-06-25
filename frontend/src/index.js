@@ -8,7 +8,6 @@ import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <BrowserRouter>
       <HelmetProvider>
         <title>Mercado Libre Argentina - Envíos Gratis en el día</title>
@@ -16,5 +15,4 @@ root.render(
       </HelmetProvider>
       <App />
     </BrowserRouter>
-  </React.StrictMode>
 );

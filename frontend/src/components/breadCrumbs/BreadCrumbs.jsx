@@ -1,3 +1,4 @@
+import React from 'react';
 import './Breadcrumbs.scss';
 import chevron from '../../shared/assets/chevron.svg';
 
