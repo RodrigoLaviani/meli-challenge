@@ -76,6 +76,7 @@ Utilice react-router-dom para lo que es la navegación.
 2. Utilizo enzyme (la libreria de Airbnb) para unit tests por una cuestion de familiaridad y conocimiento de la misma.
 3. La categoría del item no forma parte del contrato para el endpoint de detalle, por esto no se incluyó en esa vista.
 4. Se puede acceder a la vista de detalle de item con el ID del mismo por medio de la URL.
+5. No utilice branch como gitflow porque soy el único en el proyecto.
 
 ## Mejoras
 
