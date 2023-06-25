@@ -11,6 +11,7 @@ const Header = ({ search }) => {
 
   const handlerClick = () => {
     !!value.length && search(value);
+    setValue("")
   }
 
   return (
