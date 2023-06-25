@@ -1,6 +1,7 @@
 import './SearchResult.scss';
 import { useNavigate } from "react-router-dom";
 import Item from '../item/Item';
+import formatPrice from '../../shared/helper/priceHelper';
 
 const SearchResult = ({ items }) => {
   const navigate = useNavigate();
@@ -13,17 +14,17 @@ const SearchResult = ({ items }) => {
       <>
         {
           items.map((item, index) => 
-            <acticle
+            <div
               key={`item-${index}`}
               onClick={() => handlerClick(item.id)}>
               <Item
                 image={item.picture}
-                price={item.price.amount}
+                price={formatPrice(item.price)}
                 title={item.title}
                 location={item.location}
                 shipping={item.free_shipping}
               ></Item>
-            </acticle>
+            </div>
           )
         }
       </>

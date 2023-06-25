@@ -22,6 +22,14 @@
     padding-bottom: 32px;
 }
 
+.detail-description-container {
+    height: 7em;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .detail-description {
     font-size: 16px;
     padding-left: 32px;
