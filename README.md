@@ -5,8 +5,6 @@
 Utilice las version 18 de node.
 Recomiendo instalar [nvm](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/) para poder usar el versión de NodeJs de los proyectos.
 
-`npm install`
-
 ## Ejecución
 
 Para levantar la aplicación es necesario ejecutar los siguientes comandos:
