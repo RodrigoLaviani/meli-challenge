@@ -7,7 +7,7 @@ const Header = ({ search }) => {
   const [value, setValue] = useState('')
 
   const handlerClick = () => {
-    console.log(value);
+    !!value.length && search(value);
   }
 
   return (
