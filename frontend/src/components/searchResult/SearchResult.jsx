@@ -1,9 +1,12 @@
 import './SearchResult.scss';
+import { useNavigate } from "react-router-dom";
 import Item from '../item/Item';
 
 const SearchResult = ({ items }) => {
+  const navigate = useNavigate();
+
   const handlerClick = (itemId) => {
-    // window.history.replaceState({}, '', `/items/${itemId}`);
+    navigate(`/items/${itemId}`);
   }
 
   return (

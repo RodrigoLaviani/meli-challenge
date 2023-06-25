@@ -4,7 +4,7 @@ const axiosInstance = axios.create();
 
 const httpConfig = () => {
     return {
-        baseURL: 'http://localhost:3000/api',
+        baseURL: 'http://localhost:3001/api',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',

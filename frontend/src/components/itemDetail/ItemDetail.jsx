@@ -1,8 +1,27 @@
 import './ItemDetail.scss';
-import { useLoaderData } from "react-router-dom";
+import { useMatch } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import client from '../../shared/services/client';
+import formatPrice from '../../shared/helper/priceHelper';
 
 const ItemDetail = () => {
-  const item = useLoaderData();
+  const { params } = useMatch('/items/:id');
+  const [item, setItem] = useState(null)
+
+  useEffect(() => {
+    (async () => {
+      setItem(await searchItemDetail(params.id));
+    })()
+  }, [params])
+
+  const searchItemDetail = async (id) => {
+    const { data } = await client.get(`items/${id}`);
+    return data.item;
+  }
+
+  if (!item) {
+    return <></>
+  }
 
   return (
     <article className='detail-container'>
@@ -15,7 +34,14 @@ const ItemDetail = () => {
             <div className='sell-box'>
                 <label className='sell-count'>{item.condition} - {item.sold_quantity} vendidos</label>
                 <span className='sell-title'>{item.title}</span>
-                <span className='sell-price'>$ {item.price.amount}</span>
+                <span className={"sell-price"}>
+                  {formatPrice(item.price)}
+                  {item.price.decimals ? (
+                    <span className={"sell-price-decimals"}>
+                      {item.price.decimals === 0 ? '00' : item.price.decimals}
+                    </span>
+                  ) : null}
+                </span>
                 <button className='sell-button'>Comprar</button>
             </div>
         </section>
